@@ -12,9 +12,4 @@ export default defineConfig({
     }),
     tanstackStart(),
   ],
-  build: {
-    rollupOptions: {
-      external: ["react-markdown"],
-    },
-  },
 });
