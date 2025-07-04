@@ -9,9 +9,13 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
     "@tanstack/react-router": "^1.124.0",
     "@tanstack/react-router-devtools": "^1.124.0",
     "@tanstack/react-start": "^1.124.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.525.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
@@ -24,6 +28,7 @@
     "@types/react-dom": "^19.0.3",
     "postcss": "^8.5.1",
     "tailwindcss": "^4.1.11",
+    "tw-animate-css": "^1.3.5",
     "typescript": "^5.7.2",
     "vite": "^6.3.5",
     "vite-tsconfig-paths": "^5.1.4"
