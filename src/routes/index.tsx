@@ -18,7 +18,7 @@ import { Alert, AlertDescription } from "~/components/ui/alert";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 
 const querySchema = z.object({
-  query: z.string().min(3).default("").optional(),
+  query: z.string().min(3).optional(),
 });
 
 export const Route = createFileRoute("/")({
@@ -61,7 +61,7 @@ function Home() {
     }
   };
 
-  const query = Route.useSearch().query ?? inputQuery;
+  const query = queryParam ?? inputQuery;
 
   return (
     <div className="flex justify-center items-center h-screen w-full p-4">
