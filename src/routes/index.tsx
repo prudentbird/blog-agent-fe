@@ -18,7 +18,7 @@ import { Alert, AlertDescription } from "~/components/ui/alert";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 
 const querySchema = z.object({
-  query: z.string().min(3).default(""),
+  query: z.string().min(3).default("").optional(),
 });
 
 export const Route = createFileRoute("/")({
